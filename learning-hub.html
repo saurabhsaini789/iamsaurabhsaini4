@@ -1,0 +1,681 @@
+<!-- DOCUMENT TYPE DECLARATION: Forces standards mode so browsers render consistently. -->
+<!DOCTYPE html>
+<!-- ROOT ELEMENT: Sets document language to English for accessibility and search engines. -->
+<html lang="en">
+
+<!-- HEAD: Contains metadata, SEO tags, structured data, fonts, and global styles used across the site. -->
+<head>
+  <!-- GOOGLE ANALYTICS LOADER: Asynchronously fetches gtag; update ID when tracking a new property. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E43J6JSQY"></script>
+  <!-- GOOGLE ANALYTICS INITIALIZER: Maintains the required gtag function signature for site-wide analytics calls. -->
+  <script>
+    window.dataLayer = window.dataLayer || []; // GA BUFFER: Stores events triggered before gtag script finishes loading.
+    function gtag(){dataLayer.push(arguments);} // GA WRAPPER: Standard GA helper used throughout the codebase.
+    gtag('js', new Date()); // GA TIMESTAMP: Marks the session start time for analytics reporting.
+    gtag('config', 'G-1E43J6JSQY'); // GA CONFIGURATION: Associates hits with the measurement ID above.
+  </script>
+  <!-- MICROSOFT CLARITY SNIPPET: Enables heatmaps/session replay; replace tag ID when cloning to another domain. -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; // CLARITY QUEUE: Collects calls until the script loads.
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; // CLARITY LOADER: Loads script asynchronously to avoid blocking rendering.
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); // CLARITY INJECTOR: Inserts script before the first <script> tag.
+    })(window, document, "clarity", "script", "u52l86f4q0");
+  </script>
+
+  <!-- CORE META TAGS: Encoding, compatibility, and responsive viewport. -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PAGE TITLE + SEO: Update copy when repositioning the Learning Hub offering. -->
+  <title>Saurabh Saini | Learning Hub Resources</title>
+  <meta name="description" content="Access toolkits, templates, and curated resources from Saurabh Saini to elevate instructional design and learner engagement.">
+  <meta name="keywords" content="Saurabh Saini learning hub, instructional design resources, learning experience templates, education toolkit">
+  <meta name="author" content="Saurabh Saini">
+  <link rel="canonical" href="https://iamsaurabhsaini.com/learning-hub">
+
+  <!-- SOCIAL SHARING TAGS: Ensure consistent preview cards across platforms like LinkedIn and X. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saurabh Saini | Learning Hub Resources">
+  <meta property="og:description" content="Download instructional design resources and learning experience toolkits curated by Saurabh Saini.">
+  <meta property="og:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta property="og:url" content="https://iamsaurabhsaini.com/learning-hub">
+  <meta property="og:site_name" content="iamsaurabhsaini">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saurabh Saini | Learning Hub Resources">
+  <meta name="twitter:description" content="Download instructional design resources and learning experience toolkits curated by Saurabh Saini.">
+  <meta name="twitter:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta name="twitter:url" content="https://iamsaurabhsaini.com/learning-hub">
+  <meta name="twitter:creator" content="@itssaurabhsaini">
+
+  <!-- FAVICON SET: Update file paths when brand iconography changes. -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/images/logo.png">
+
+  <!-- GLOBAL STYLESHEET: Provides layout, typography, color, and component styles reused everywhere. -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- PERFORMANCE HINTS FOR FONTS: Preconnect to Google Fonts and load Poppins families used site-wide. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- STRUCTURED DATA: Person + Website + Learning Hub Collection; keep values aligned with visible resource content. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://iamsaurabhsaini.com/#person",
+          "name": "Saurabh Saini",
+          "alternateName": [
+            "Saurabhsa Saini"
+          ],
+          "jobTitle": [
+            "Instructional Designer",
+            "Learning Experience Designer",
+            "Front-End Developer"
+          ],
+          "image": "https://iamsaurabhsaini.com/assets/images/portfoliopicv5.png",
+          "url": "https://iamsaurabhsaini.com/",
+          "description": "Instructional designer and multimedia storyteller crafting data-informed learning experiences and web products.",
+          "email": "mailto:saurabhsaini789@gmail.com",
+          "telephone": "+1-905-781-2687",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Winnipeg",
+            "addressRegion": "Manitoba",
+            "addressCountry": "CA"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/iamsaurabhsaini",
+            "https://www.youtube.com/@iamsaurabhsaini",
+            "https://www.instagram.com/createwithsaurabh",
+            "https://x.com/itssaurabhsaini",
+            "https://www.behance.net/iamsaurabhsaini"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://iamsaurabhsaini.com/#website",
+          "url": "https://iamsaurabhsaini.com/",
+          "name": "Saurabh Saini Portfolio",
+          "description": "Portfolio and learning hub highlighting the work of instructional designer Saurabh Saini.",
+          "publisher": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": [
+            "WebPage",
+            "CollectionPage"
+          ],
+          "@id": "https://iamsaurabhsaini.com/learning-hub#page",
+          "url": "https://iamsaurabhsaini.com/learning-hub",
+          "name": "Learning Hub Resources | Saurabh Saini",
+          "description": "Curated templates, toolkits, and learning resources created by Saurabh Saini for instructional designers.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://iamsaurabhsaini.com/#website"
+          },
+          "about": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://iamsaurabhsaini.com/images/preview.jpg"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://iamsaurabhsaini.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Learning Hub",
+                "item": "https://iamsaurabhsaini.com/learning-hub"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- INLINE STYLES: Floating CTA appearance; matches behavior shared across other pages. -->
+  <style>
+    .floating-cta {
+      position: fixed;
+      bottom: clamp(18px, 4vw, 48px);
+      left: 50%;
+      transform: translate(-50%, 12px);
+      display: flex;
+      gap: clamp(12px, 2.8vw, 20px);
+      z-index: 10010;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+
+    .floating-cta.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+
+    .floating-cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 204, 102, 0.4);
+      background:
+        linear-gradient(135deg, rgba(255, 226, 170, 0.96), rgba(255, 204, 102, 1)),
+        rgba(15, 17, 21, 0.92);
+      color: #1a1d23;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .floating-cta-button:hover,
+    .floating-cta-button:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(255, 226, 170, 0.9);
+      background:
+        linear-gradient(135deg, rgba(255, 233, 188, 0.98), rgba(255, 214, 128, 1)),
+        rgba(15, 17, 21, 0.92);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
+      outline: none;
+    }
+
+    .floating-cta-button:focus-visible {
+      box-shadow:
+        0 0 0 3px rgba(255, 204, 102, 0.45),
+        0 24px 48px rgba(0, 0, 0, 0.34);
+    }
+
+    body.light-mode .floating-cta-button {
+      background:
+        linear-gradient(135deg, rgba(255, 244, 218, 0.98), rgba(255, 230, 176, 0.96));
+      border: 1px solid rgba(205, 150, 45, 0.45);
+      color: #3b2a00;
+      box-shadow: 0 18px 34px rgba(205, 160, 60, 0.18);
+    }
+
+    body.light-mode .floating-cta-button:hover,
+    body.light-mode .floating-cta-button:focus-visible {
+      background:
+        linear-gradient(135deg, rgba(255, 236, 174, 0.98), rgba(255, 215, 120, 0.96));
+      border-color: rgba(205, 150, 45, 0.65);
+      color: #2d1e00;
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .floating-cta {
+        gap: clamp(10px, 2vw, 18px);
+      }
+
+      .floating-cta-button {
+        padding: 0.65rem 1.9rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        min-width: 240px;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .floating-cta {
+        flex-direction: column;
+        align-items: center;
+        width: min(90vw, 380px);
+        padding-bottom: 48px;
+      }
+
+      .floating-cta-button {
+        width: 100%;
+        text-align: center;
+        font-size: 0.82rem;
+        padding: 0.7rem 1.2rem;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<!-- BODY: Wraps sidebar, learning hub listings, floating CTAs, and helper scripts. -->
+<body class="tablet-stacked light-mode">
+
+  <!-- THEME TOGGLE: Allows readers to switch between light/dark mode; aria-label text is updated by script.js. -->
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+    <span class="theme-toggle__pill" aria-hidden="true">
+      <span class="theme-toggle__option theme-toggle__option--sun">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--sun">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23f5a623' stroke='%23f5a623'/%3E%3Cline x1='12' y1='2' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='22'/%3E%3Cline x1='4.22' y1='4.22' x2='6.34' y2='6.34'/%3E%3Cline x1='17.66' y1='17.66' x2='19.78' y2='19.78'/%3E%3Cline x1='2' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='22' y2='12'/%3E%3Cline x1='4.22' y1='19.78' x2='6.34' y2='17.66'/%3E%3Cline x1='17.66' y1='6.34' x2='19.78' y2='4.22'/%3E%3C/svg%3E"
+            alt="Sun icon representing light theme"
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__option theme-toggle__option--moon">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--moon">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath fill='%23f5a623' stroke='%23f5a623' d='M21 12.79A9 9 0 0 1 11.21 3 7 7 0 0 0 12 21a7 7 0 0 0 9-8.21Z'/%3E%3C/svg%3E"
+            alt="Moon icon representing dark theme"
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__indicator"></span>
+    </span>
+  </button>
+
+  <!-- PAGE MAP: Quick orientation for maintainers; update when adding new sections or data attributes. -->
+  <!--
+    PAGE MAP — learning-hub.html
+    Quick notes for editing learning resources.
+
+    SIDEBAR (shared)     → Profile details & contacts
+    .resource-list       → Grid of learning resources (card per item)
+    .resource-title      → Resource name text
+    .resource-category   → Label describing resource type
+
+    GLOBAL CONTROLS
+      [data-theme-toggle] → Theme toggle (persists preference via script.js)
+
+    FLOATING UI
+      .floating-cta       → Quick actions to resume, portfolio, contact pages
+  -->
+
+  <!-- PRIMARY LAYOUT: Sidebar holds bio/contact info; main content lists learning hub resources. -->
+  <main>
+    <!-- SIDEBAR: Shared component across pages; contains avatar, name, role, and expandable contact list. -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/portfoliopicv5.png" alt="Portrait of Saurabh Saini" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Saurabhsa Saini">Saurabh Saini</h1>
+          <p class="title">Instructional Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <!-- CONTACT LIST: Duplicate a list item block to add new channels; update icon, label, and link. -->
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-GMAIL.png" alt="Gmail envelope icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:saurabhsaini789@gmail.com" class="contact-link">saurabhsaini789@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALL.png" alt="Phone handset icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+19057812687" class="contact-link">+1 (905) 781-2687</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LINKEDIN.png" alt="LinkedIn logo icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/iamsaurabhsaini/" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-YT.png" alt="YouTube play button icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">YouTube</p>
+              <a href="https://www.youtube.com/@iamsaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-INSTA.png" alt="Instagram camera icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Instagram</p>
+              <a href="https://www.instagram.com/createwithsaurabh/" class="contact-link" target="_blank" rel="noopener noreferrer">@createwithsaurabh</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-X.png" alt="X social network icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Twitter</p>
+              <a href="https://x.com/itssaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@itssaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALENDAR.png" alt="Calendar icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1996-07-23">July 23, 1996</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LOCATION.png" alt="Location pin icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Winnipeg, Manitoba, CA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT: Houses navigation tabs and the learning resource listings. -->
+    <div class="main-content">
+      <!-- NAVBAR: Shared top navigation; data attributes help script.js keep the correct tab highlighted. -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="about" href="index.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="resume" href="resume.html">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="portfolio" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" data-nav-link data-nav-target="learning hub" href="learning-hub.html">Learning Hub</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="blog" href="blog.html">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- LEARNING HUB ARTICLE: Lists curated resources grouped by category tags. -->
+      <article class="learning-hub active" data-page="learning hub">
+        <header>
+          <h2 class="h2 article-title">Learning Hub</h2>
+        </header>
+
+        <!-- RESOURCE COLLECTION: Similar structure to portfolio grid but tailored for resource cards. -->
+        <section class="learning-resources">
+          <!-- RESOURCE LIST: Add/remove <li> entries to update catalog; ensure data attributes match script.js filters. -->
+          <ul class="project-list resource-list">
+            <!-- RESOURCE CARD: Article example; replace image, title, and copy link to surface new materials. -->
+            <li class="project-item resource-item active" data-learning-filter-item data-learning-category="articles">
+              <a class="resource-card" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img resource-img">
+                  <div class="project-item-icon-box resource-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/blog-1.jpg" alt="Instructional design analysis resource cover" loading="lazy">
+                </figure>
+
+                <h3 class="project-title resource-title">Instructional Design Analysis</h3>
+                <p class="project-category resource-category">Article</p>
+              </a>
+            </li>
+
+            <!-- RESOURCE CARD: Course example; script.js uses data-learning-category for filtering controls. -->
+            <li class="project-item resource-item active" data-learning-filter-item data-learning-category="courses">
+              <a class="resource-card" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img resource-img">
+                  <div class="project-item-icon-box resource-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Instructional design foundations specialization cover" loading="lazy">
+                </figure>
+
+                <h3 class="project-title resource-title">Instructional Design Foundations</h3>
+                <p class="project-category resource-category">Course</p>
+              </a>
+            </li>
+
+            <!-- RESOURCE CARD: Toolkit example; keep consistent markup so theme styles apply uniformly. -->
+            <li class="project-item resource-item active" data-learning-filter-item data-learning-category="toolkits">
+              <a class="resource-card" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img resource-img">
+                  <div class="project-item-icon-box resource-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="Articulate 360 toolkit resource cover" loading="lazy">
+                </figure>
+
+                <h3 class="project-title resource-title">Articulate 360 Toolkit</h3>
+                <p class="project-category resource-category">Toolkit</p>
+              </a>
+            </li>
+
+            <!-- RESOURCE CARD: Podcast example; update data-learning-category if adding new filter types. -->
+            <li class="project-item resource-item active" data-learning-filter-item data-learning-category="podcasts">
+              <a class="resource-card" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img resource-img">
+                  <div class="project-item-icon-box resource-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Leading learning podcast artwork" loading="lazy">
+                </figure>
+
+                <h3 class="project-title resource-title">Leading Learning Podcast</h3>
+                <p class="project-category resource-category">Podcast</p>
+              </a>
+            </li>
+
+            <!-- RESOURCE CARD: Community example; duplicate and adjust content to surface new communities. -->
+            <li class="project-item resource-item active" data-learning-filter-item data-learning-category="communities">
+              <a class="resource-card" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img resource-img">
+                  <div class="project-item-icon-box resource-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/blog-3.jpg" alt="Training industry community resource cover" loading="lazy">
+                </figure>
+
+                <h3 class="project-title resource-title">Training Industry Community</h3>
+                <p class="project-category resource-category">Community</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- FLOATING CTA CLUSTER: Links to resume, portfolio, and contact pages; script shows/hides on scroll. -->
+  <div class="floating-cta" data-floating-cta hidden>
+    <a class="floating-cta-button" href="resume.html" data-nav-target="resume">Learn More About Me</a>
+    <a class="floating-cta-button" href="portfolio.html" data-nav-target="portfolio">Explore Projects</a>
+    <a class="floating-cta-button" href="contact.html" data-nav-target="contact">Let's Work Together</a>
+  </div>
+
+  <!-- CORE SCRIPT: Manages global interactivity (theme toggles, navigation state, filters, lightbox). -->
+  <script src="./assets/js/script.js"></script>
+  <!-- IONICONS: Icon web components used within cards, nav, and CTAs. -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- FLOATING CTA CONTROLLER: Same timing/scroll logic as other pages; comments explain each state transition. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const floatingCta = document.querySelector('[data-floating-cta]'); // CTA WRAPPER: Holds the three quick action buttons.
+
+      if (!floatingCta) {
+        return; // SAFETY EXIT: Stop if markup changed or feature was intentionally removed.
+      }
+
+      let hasActivatedFloatingCta = false; // TRACKER: Prevents repeated initializations.
+      let isFloatingCtaVisible = false; // STATE: Reflects whether CTA is currently shown.
+      let lastScrollY = window.scrollY; // MEMORY: Used to compare scroll direction.
+      let ctaTimeoutId = null; // TIMER REFERENCE: Allows canceling delay if user scrolls sooner.
+
+      const showFloatingCta = () => {
+        if (isFloatingCtaVisible) {
+          return; // NO-OP: Skip if already visible.
+        }
+
+        floatingCta.classList.add('is-visible');
+        floatingCta.removeAttribute('hidden');
+        isFloatingCtaVisible = true;
+      };
+
+      const hideFloatingCta = () => {
+        if (!isFloatingCtaVisible) {
+          return; // NO-OP: Skip if already hidden.
+        }
+
+        floatingCta.classList.remove('is-visible');
+        floatingCta.setAttribute('hidden', '');
+        isFloatingCtaVisible = false;
+      };
+
+      const activateFloatingCta = () => {
+        if (hasActivatedFloatingCta) {
+          showFloatingCta(); // FAST EXIT: If already activated, simply ensure it is visible.
+          return;
+        }
+
+        hasActivatedFloatingCta = true;
+        showFloatingCta();
+
+        if (ctaTimeoutId) {
+          window.clearTimeout(ctaTimeoutId); // CLEANUP: Prevent delayed callback after manual activation.
+          ctaTimeoutId = null;
+        }
+      };
+
+      ctaTimeoutId = window.setTimeout(() => {
+        activateFloatingCta(); // AUTO SHOW: Display CTA if visitor stays for 7s without scrolling.
+      }, 7000);
+
+      const handleFloatingCtaScroll = () => {
+        const currentScrollY = window.scrollY;
+
+        if (!hasActivatedFloatingCta && currentScrollY > 0) {
+          activateFloatingCta(); // EARLY SHOW: Reveal CTA as soon as user engages with scroll.
+        }
+
+        if (!hasActivatedFloatingCta) {
+          lastScrollY = currentScrollY; // WAIT STATE: Update baseline until CTA activates.
+          return;
+        }
+
+        if (currentScrollY < lastScrollY && currentScrollY <= 120) {
+          hideFloatingCta(); // SCROLL UP NEAR TOP: Hide CTA to reduce clutter.
+        } else if (currentScrollY > 160) {
+          showFloatingCta(); // DEEP SCROLL: Keep CTA accessible while browsing resources.
+        }
+
+        lastScrollY = currentScrollY; // UPDATE MEMORY: Prepare for next direction check.
+      };
+
+      window.addEventListener('scroll', handleFloatingCtaScroll, { passive: true });
+
+      const ACTIVE_PAGE_KEY = 'active-page';
+      const SCROLL_POSITION_KEY = 'page-scroll-position';
+      const SKIP_SCROLL_RESTORE_KEY = 'skip-scroll-restore';
+
+      const storeNavTargetForLink = (link) => {
+        if (!(link instanceof HTMLAnchorElement)) {
+          return; // TYPE GUARD: Ignore elements that are not anchors.
+        }
+
+        try {
+          const navTarget = (link.dataset.navTarget || '').trim().toLowerCase();
+
+          if (typeof sessionStorage !== 'undefined') {
+            if (navTarget) {
+              sessionStorage.setItem(ACTIVE_PAGE_KEY, navTarget); // PERSIST TARGET: Helps script.js highlight tab after navigation.
+            } else {
+              sessionStorage.removeItem(ACTIVE_PAGE_KEY);
+            }
+
+            sessionStorage.setItem(SKIP_SCROLL_RESTORE_KEY, 'true'); // PREVENT SCROLL RESTORE: Offers a smoother transition between pages.
+            sessionStorage.removeItem(SCROLL_POSITION_KEY); // CLEAR OLD SCROLL: Avoids mismatched positions when returning.
+          }
+        } catch (error) {
+          // STORAGE FALLBACK: Some privacy modes disable sessionStorage; ignore to keep navigation functional.
+        }
+      };
+
+      const ctaLinks = floatingCta.querySelectorAll('a[href]');
+      ctaLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          storeNavTargetForLink(link); // ON CLICK: Store nav state so destination loads with the correct active tab.
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

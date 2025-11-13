@@ -1,0 +1,845 @@
+<!-- DOCUMENT TYPE DECLARATION: Forces standards mode so modern CSS/layout features behave predictably. -->
+<!DOCTYPE html>
+<!-- ROOT HTML TAG: Sets base language to English; update lang attribute whenever localizing the page. -->
+<html lang="en">
+
+<!-- DOCUMENT HEAD: Stores metadata, SEO tags, structured data, and resources that must load before body content. -->
+<head>
+  <!-- GOOGLE ANALYTICS LOADER: Fetches gtag asynchronously; replace measurement ID when wiring to another GA property. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E43J6JSQY"></script>
+  <!-- GOOGLE ANALYTICS INITIALIZER: Sets up the data layer and configures tracking; keep function name as gtag for compatibility. -->
+  <script>
+    window.dataLayer = window.dataLayer || []; // GA BUFFER: Holds events until gtag library is ready.
+    function gtag(){dataLayer.push(arguments);} // GA WRAPPER: Required signature for Google Analytics.
+    gtag('js', new Date()); // GA TIMESTAMP: Marks when analytics session begins.
+    gtag('config', 'G-1E43J6JSQY'); // GA CONFIG: Associates page traffic with the specified measurement ID.
+  </script>
+  <!-- MICROSOFT CLARITY INITIALIZER: Enables session insights; change the tag ID to track under a different Clarity project. -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; // CLARITY QUEUE: Buffers calls before Clarity script loads.
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; // CLARITY SCRIPT: Loads remote analytics bundle.
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); // CLARITY INSERTION: Adds script before first script tag.
+    })(window, document, "clarity", "script", "u52l86f4q0");
+  </script>
+  <!-- CHARACTER ENCODING: Ensures text renders as UTF-8; leave unchanged unless targeting a different encoding. -->
+  <meta charset="UTF-8">
+  <!-- IE COMPATIBILITY: Requests latest rendering engine in older Internet Explorer; keep in place for legacy users. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- VIEWPORT SETTINGS: Guarantees mobile-responsive layout by matching device width; adjust only with a clear reason. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PAGE TITLE: Appears in browser tabs and search results; update text to reflect new portfolio branding. -->
+  <title>Saurabh Saini | Designer &amp; Developer</title>
+  <!-- META DESCRIPTION: Search snippet summary; rewrite copy to highlight updated portfolio offerings. -->
+  <meta name="description" content="Portfolio of Saurabh Saini – showcasing design, development, and creative projects.">
+  <!-- META KEYWORDS: Legacy SEO hint; update keyword list when focus areas shift. -->
+  <meta name="keywords" content="Saurabh Saini, instructional designer, web design, portfolio, creative developer, process analysis, dashboards">
+  <!-- META AUTHOR: Identifies the page owner; change if another maintainer takes over. -->
+  <meta name="author" content="Saurabh Saini">
+  <!-- CANONICAL URL: Prevents duplicate content; ensure link matches the preferred portfolio URL. -->
+  <link rel="canonical" href="https://iamsaurabhsaini.com/portfolio">
+  <!-- OPEN GRAPH META: Provide social share details for platforms like Facebook/LinkedIn. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saurabh Saini Portfolio">
+  <meta property="og:description" content="Explore my projects, design work, and blog.">
+  <meta property="og:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta property="og:url" content="https://iamsaurabhsaini.com/portfolio">
+  <meta property="og:site_name" content="iamsaurabhsaini">
+  <!-- TWITTER CARD META: Controls how links preview on X (Twitter); keep attributes synchronized with OG fields. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saurabh Saini Portfolio">
+  <meta name="twitter:description" content="Explore my projects, design work, and blog.">
+  <meta name="twitter:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta name="twitter:url" content="https://iamsaurabhsaini.com/portfolio">
+  <meta name="twitter:creator" content="@itssaurabhsaini">
+
+  <!-- FAVICON LINKS: Browser/in-app icon references; replace image paths when updating brand mark. -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/images/logo.png">
+
+  <!-- GLOBAL STYLESHEET: Imports shared CSS; keep path aligned if assets relocate. -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- GOOGLE FONTS PRECONNECT: Speeds initial font request; retain if using Google-hosted typography. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- POPPINS FONT FAMILY: Main site typography; adjust query parameters to include additional weights. -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- STRUCTURED DATA: Machine-readable details for search engines; keep values synced with portfolio updates. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://iamsaurabhsaini.com/#person",
+          "name": "Saurabh Saini",
+          "alternateName": [
+            "Saurabhsa Saini"
+          ],
+          "jobTitle": [
+            "Instructional Designer",
+            "Learning Experience Designer",
+            "Front-End Developer"
+          ],
+          "image": "https://iamsaurabhsaini.com/assets/images/portfoliopicv5.png",
+          "url": "https://iamsaurabhsaini.com/",
+          "description": "Instructional designer and multimedia storyteller crafting data-informed learning experiences and web products.",
+          "email": "mailto:saurabhsaini789@gmail.com",
+          "telephone": "+1-905-781-2687",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Winnipeg",
+            "addressRegion": "Manitoba",
+            "addressCountry": "CA"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/iamsaurabhsaini",
+            "https://www.youtube.com/@iamsaurabhsaini",
+            "https://www.instagram.com/createwithsaurabh",
+            "https://x.com/itssaurabhsaini",
+            "https://www.behance.net/iamsaurabhsaini"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://iamsaurabhsaini.com/#website",
+          "url": "https://iamsaurabhsaini.com/",
+          "name": "Saurabh Saini Portfolio",
+          "description": "Portfolio and learning hub highlighting the work of instructional designer Saurabh Saini.",
+          "publisher": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": [
+            "WebPage",
+            "CollectionPage"
+          ],
+          "@id": "https://iamsaurabhsaini.com/portfolio#page",
+          "url": "https://iamsaurabhsaini.com/portfolio",
+          "name": "Portfolio | Saurabh Saini",
+          "description": "Collection of instructional design, development, and creative storytelling projects by Saurabh Saini.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://iamsaurabhsaini.com/#website"
+          },
+          "about": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://iamsaurabhsaini.com/images/preview.jpg"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://iamsaurabhsaini.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Portfolio",
+                "item": "https://iamsaurabhsaini.com/portfolio"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- PAGE-SPECIFIC STYLES: Minor CTA adjustments reused from other pages; avoid changing values to keep visuals consistent. -->
+  <style>
+    .floating-cta {
+      position: fixed;
+      bottom: clamp(18px, 4vw, 48px);
+      left: 50%;
+      transform: translate(-50%, 12px);
+      display: flex;
+      gap: clamp(12px, 2.8vw, 20px);
+      z-index: 10010;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+
+    .floating-cta.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+
+    .floating-cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 204, 102, 0.4);
+      background:
+        linear-gradient(135deg, rgba(255, 226, 170, 0.96), rgba(255, 204, 102, 1)),
+        rgba(15, 17, 21, 0.92);
+      color: #1a1d23;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .floating-cta-button:hover,
+    .floating-cta-button:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(255, 226, 170, 0.9);
+      background:
+        linear-gradient(135deg, rgba(255, 233, 188, 0.98), rgba(255, 214, 128, 1)),
+        rgba(15, 17, 21, 0.92);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
+      outline: none;
+    }
+
+    .floating-cta-button:focus-visible {
+      box-shadow:
+        0 0 0 3px rgba(255, 204, 102, 0.45),
+        0 24px 48px rgba(0, 0, 0, 0.34);
+    }
+
+    body.light-mode .floating-cta-button {
+      background:
+        linear-gradient(135deg, rgba(255, 244, 218, 0.98), rgba(255, 230, 176, 0.96));
+      border: 1px solid rgba(205, 150, 45, 0.45);
+      color: #3b2a00;
+      box-shadow: 0 18px 34px rgba(205, 160, 60, 0.18);
+    }
+
+    body.light-mode .floating-cta-button:hover,
+    body.light-mode .floating-cta-button:focus-visible {
+      background:
+        linear-gradient(135deg, rgba(255, 236, 174, 0.98), rgba(255, 215, 120, 0.96));
+      border-color: rgba(205, 150, 45, 0.65);
+      color: #2d1e00;
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .floating-cta {
+        gap: clamp(10px, 2vw, 18px);
+      }
+
+      .floating-cta-button {
+        padding: 0.65rem 1.9rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        min-width: 240px;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .floating-cta {
+        flex-direction: column;
+        align-items: center;
+        width: min(90vw, 380px);
+        padding-bottom: 48px;
+      }
+
+      .floating-cta-button {
+        width: 100%;
+        text-align: center;
+        font-size: 0.82rem;
+        padding: 0.7rem 1.2rem;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+
+
+<!-- DOCUMENT BODY: Contains visible portfolio content and supporting scripts; body classes manage layout and theme defaults. -->
+<body class="tablet-stacked portfolio-page light-mode">
+
+  <!-- THEME TOGGLE BUTTON: Lets visitors switch between light/dark themes; aria-label should describe the next mode. -->
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+    <span class="theme-toggle__pill" aria-hidden="true">
+      <span class="theme-toggle__option theme-toggle__option--sun">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--sun">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23f5a623' stroke='%23f5a623'/%3E%3Cline x1='12' y1='2' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='22'/%3E%3Cline x1='4.22' y1='4.22' x2='6.34' y2='6.34'/%3E%3Cline x1='17.66' y1='17.66' x2='19.78' y2='19.78'/%3E%3Cline x1='2' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='22' y2='12'/%3E%3Cline x1='4.22' y1='19.78' x2='6.34' y2='17.66'/%3E%3Cline x1='17.66' y1='6.34' x2='19.78' y2='4.22'/%3E%3C/svg%3E"
+            alt=""
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__option theme-toggle__option--moon">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--moon">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath fill='%23f5a623' stroke='%23f5a623' d='M21 12.79A9 9 0 0 1 11.21 3 7 7 0 0 0 12 21a7 7 0 0 0 9-8.21Z'/%3E%3C/svg%3E"
+            alt=""
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__indicator"></span>
+    </span>
+  </button>
+
+  <!-- PAGE MAP: Onboarding note for future editors; revise this comment when reorganizing major sections. -->
+  <!--
+    PAGE MAP — portfolio.html
+    Overview of sections controlling portfolio content.
+
+    SIDEBAR (shared)     → Profile, contact info, social links
+    .filter-list         → Category buttons shown above the gallery
+    .project-list        → Grid of portfolio cards (image, title, category)
+
+    GLOBAL CONTROLS
+      [data-theme-toggle] → Theme toggle (persists preference via script.js)
+
+    FLOATING UI
+      .floating-cta       → Quick actions to resume, blog, contact pages
+  -->
+
+  <!-- PRIMARY LAYOUT: Wraps sidebar and main portfolio content inside semantic <main>. -->
+  <main>
+    <!-- SIDEBAR: Shared profile/contact component reused across pages; keep markup identical for consistent styling. -->
+    <aside class="sidebar" data-sidebar>
+      <!-- SIDEBAR INFO BLOCK: Displays avatar, name, role, and the contact toggle button. -->
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/portfoliopicv5.png" alt="Portrait of Saurabh Saini" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Saurabhsa Saini">Saurabh Saini</h1>
+          <p class="title">Instructional Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <!-- SIDEBAR DETAILS: Hidden contact drawer that expands when visitors click "Show Contacts". -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <!-- CONTACT LIST: Each <li> contains icon + descriptive link or text; duplicate items to add new contact methods. -->
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-GMAIL.png" alt="Gmail envelope icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:saurabhsaini789@gmail.com" class="contact-link">saurabhsaini789@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALL.png" alt="Phone handset icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+19057812687" class="contact-link">+1 (905) 781-2687</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LINKEDIN.png" alt="LinkedIn logo icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/iamsaurabhsaini/" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-YT.png" alt="YouTube play button icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">YouTube</p>
+              <a href="https://www.youtube.com/@iamsaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-INSTA.png" alt="Instagram camera icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Instagram</p>
+              <a href="https://www.instagram.com/createwithsaurabh/" class="contact-link" target="_blank" rel="noopener noreferrer">@createwithsaurabh</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-X.png" alt="X social network icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Twitter</p>
+              <a href="https://x.com/itssaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@itssaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALENDAR.png" alt="Calendar icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1996-07-23">July 23, 1996</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LOCATION.png" alt="Location pin icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Winnipeg, Manitoba, CA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT: Right-hand column containing navigation, filter controls, and portfolio grid. -->
+    <div class="main-content">
+      <!-- NAVBAR: Primary page navigation; data attributes ensure script.js tracks active links across sessions. -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="about" href="index.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="resume" href="resume.html">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" data-nav-link data-nav-target="portfolio" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="learning hub" href="learning-hub.html">Learning Hub</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="blog" href="blog.html">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- PORTFOLIO ARTICLE: Hosts filter controls and project cards; <article> improves semantics for screen readers. -->
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <!-- PROJECTS SECTION: Combines category filters with the project grid; JS handles filtering states. -->
+        <section class="projects">
+          <!-- FILTER BUTTON LIST: Desktop buttons to filter projects; text labels map to data-category values. -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Instructional design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Process analysis</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Graphic design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Education</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Dashboards</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Project management</button>
+            </li>
+          </ul>
+
+          <!-- MOBILE FILTER SELECT: Dropdown version of filters; script.js syncs selection with desktop buttons. -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button class="active" data-filter-btn data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Instructional design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Process analysis</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Graphic design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Education</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Web design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Dashboards</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Project management</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PROJECT LIST: Grid of clickable cards; each <li> uses data attributes that script.js reads for filtering and modal info. -->
+          <ul class="project-list">
+            <!-- PROJECT CARD: Dashboards example linking to internal project page; update href for new case studies. -->
+            <li class="project-item active" data-filter-item data-category="dashboards" data-project-item>
+              <a class="project-item-link" href="projectpage.html" data-external-url="projectpage.html">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="Finance analytics dashboard preview" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Finance</h3>
+                <p class="project-category" data-project-category>Dashboards</p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Web design project hosted externally; keep target behavior inside script.js if changed later. -->
+            <li class="project-item active" data-filter-item data-category="web design" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="Orizon landing page interface mockup" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Orizon</h3>
+                <p class="project-category" data-project-category>Web design</p>
+                <p class="project-description" data-project-description hidden>
+                  Orizon helps product teams launch landing pages fast with modular layouts and conversion-focused components.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Graphic design case study; hide long description until needed for modal (managed by script.js). -->
+            <li class="project-item active" data-filter-item data-category="graphic design" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="Fundo campaign visual layout" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Fundo</h3>
+                <p class="project-category" data-project-category>Graphic design</p>
+                <p class="project-description" data-project-description hidden>
+                  Fundo pairs refined typography with bold imagery to present campaign stories that feel premium and engaging.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Instructional design sample; data attributes allow lightbox/modal to populate details dynamically. -->
+            <li class="project-item active" data-filter-item data-category="instructional design" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.png" alt="Brawlhalla training companion prototype" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Brawlhalla</h3>
+                <p class="project-category" data-project-category>Instructional design</p>
+                <p class="project-description" data-project-description hidden>
+                  A companion application with match tracking, hero stats, and real-time notifications for competitive players.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Templates & resources category; maintain data-category spelling for filter accuracy. -->
+            <li class="project-item active" data-filter-item data-category="templates & resources" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="DSM template system showcase" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>DSM.</h3>
+                <p class="project-category" data-project-category>Templates &amp; resources</p>
+                <p class="project-description" data-project-description hidden>
+                  A sleek portfolio experience for a digital agency, built around motion, storytelling, and clear service tiers.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Process analysis visual; external link opens in same tab to preserve JS behavior. -->
+            <li class="project-item active" data-filter-item data-category="process analysis" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" target="_blank" rel="noopener" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-6.png" alt="MetaSpark process visualization" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>MetaSpark</h3>
+                <p class="project-category" data-project-category>Process analysis</p>
+                <p class="project-description" data-project-description hidden>
+                  MetaSpark visualizes product analytics through vibrant gradients, encouraging deeper exploration of key metrics.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Project management solution synopsis. -->
+            <li class="project-item active" data-filter-item data-category="project management" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" target="_blank" rel="noopener" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-7.png" alt="Summary project management dashboard" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Summary</h3>
+                <p class="project-category" data-project-category>Project management</p>
+                <p class="project-description" data-project-description hidden>
+                  Summary automatically aggregates meeting notes into timelines, action items, and shareable insights.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Education-focused productivity hub example. -->
+            <li class="project-item active" data-filter-item data-category="education" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" target="_blank" rel="noopener" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="Task Manager education platform mockup" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Task Manager</h3>
+                <p class="project-category" data-project-category>Education</p>
+                <p class="project-description" data-project-description hidden>
+                  A productivity hub featuring kanban boards, progress tracking, and collaborative comments in real time.
+                </p>
+              </a>
+            </li>
+
+            <!-- PROJECT CARD: Additional web design example; continue to update alt text for accessibility. -->
+            <li class="project-item active" data-filter-item data-category="web design" data-project-item>
+              <a class="project-item-link" href="https://forkrightfilms.com/forkrightfilms-portfolio" target="_blank" rel="noopener" data-external-url="https://forkrightfilms.com/forkrightfilms-portfolio">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-9.png" alt="Arrival travel booking interface" loading="lazy" data-project-img>
+                </figure>
+
+                <h3 class="project-title" data-project-title>Arrival</h3>
+                <p class="project-category" data-project-category>Web design</p>
+                <p class="project-description" data-project-description hidden>
+                  Arrival introduces a refined booking flow that adapts to user preferences and highlights key travel benefits.
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- FLOATING CTA: Persistent quick links; script.js controls show/hide timing based on scroll and delay. -->
+  <div class="floating-cta" data-floating-cta hidden>
+    <a class="floating-cta-button" href="resume.html" data-nav-target="resume">Learn More About Me</a>
+    <a class="floating-cta-button" href="blog.html" data-nav-target="blog">Check My Blogs</a>
+    <a class="floating-cta-button" href="contact.html" data-nav-target="contact">Let's Work Together</a>
+  </div>
+
+  <!-- CORE SCRIPT: Loads global interactivity such as filtering and theme persistence. -->
+  <script src="./assets/js/script.js"></script>
+  <!-- IONICONS: Icon library for sun/moon toggles, chevrons, and eye icons. -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- FLOATING CTA LOGIC: Mirrors other pages with detailed comments for future updates. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // CTA ELEMENT LOOKUP: Locate the floating CTA container once the DOM is ready.
+      const floatingCta = document.querySelector('[data-floating-cta]');
+
+      // SAFETY CHECK: Exit early if the floating CTA element was removed or renamed.
+      if (!floatingCta) {
+        return;
+      }
+
+      // CTA STATE TRACKING: Variables controlling activation timing and visibility toggles.
+      let hasActivatedFloatingCta = false;
+      let isFloatingCtaVisible = false;
+      let lastScrollY = window.scrollY;
+      let ctaTimeoutId = null;
+
+      // SHOW CTA: Adds helper class/attribute to reveal the CTA when appropriate.
+      const showFloatingCta = () => {
+        if (isFloatingCtaVisible) {
+          return;
+        }
+
+        floatingCta.classList.add('is-visible');
+        floatingCta.removeAttribute('hidden');
+        isFloatingCtaVisible = true;
+      };
+
+      // HIDE CTA: Conceals the CTA by reversing class/attribute changes.
+      const hideFloatingCta = () => {
+        if (!isFloatingCtaVisible) {
+          return;
+        }
+
+        floatingCta.classList.remove('is-visible');
+        floatingCta.setAttribute('hidden', '');
+        isFloatingCtaVisible = false;
+      };
+
+      // ACTIVATE CTA: Ensures the CTA only initializes once and clears any delay timer.
+      const activateFloatingCta = () => {
+        if (hasActivatedFloatingCta) {
+          showFloatingCta();
+          return;
+        }
+
+        hasActivatedFloatingCta = true;
+        showFloatingCta();
+
+        if (ctaTimeoutId) {
+          window.clearTimeout(ctaTimeoutId);
+          ctaTimeoutId = null;
+        }
+      };
+
+      // DELAYED ACTIVATE: Automatically shows the CTA after seven seconds of page time.
+      ctaTimeoutId = window.setTimeout(() => {
+        activateFloatingCta();
+      }, 7000);
+
+      // SCROLL HANDLER: Reveals/hides CTA based on scroll position and direction to avoid obstructing hero content.
+      const handleFloatingCtaScroll = () => {
+        const currentScrollY = window.scrollY;
+
+        if (!hasActivatedFloatingCta && currentScrollY > 0) {
+          activateFloatingCta();
+        }
+
+        if (!hasActivatedFloatingCta) {
+          lastScrollY = currentScrollY;
+          return;
+        }
+
+        if (currentScrollY < lastScrollY && currentScrollY <= 120) {
+          hideFloatingCta();
+        } else if (currentScrollY > 160) {
+          showFloatingCta();
+        }
+
+        lastScrollY = currentScrollY;
+      };
+
+      window.addEventListener('scroll', handleFloatingCtaScroll, { passive: true });
+
+      // SESSION STORAGE KEYS: Shared across pages to maintain nav states and scroll behavior.
+      const ACTIVE_PAGE_KEY = 'active-page';
+      const SCROLL_POSITION_KEY = 'page-scroll-position';
+      const SKIP_SCROLL_RESTORE_KEY = 'skip-scroll-restore';
+
+      // STORE NAV TARGET: Remembers which page link the user clicked for consistent navbar highlighting.
+      const storeNavTargetForLink = (link) => {
+        if (!(link instanceof HTMLAnchorElement)) {
+          return;
+        }
+
+        try {
+          const navTarget = (link.dataset.navTarget || '').trim().toLowerCase();
+
+          if (typeof sessionStorage !== 'undefined') {
+            if (navTarget) {
+              sessionStorage.setItem(ACTIVE_PAGE_KEY, navTarget);
+            } else {
+              sessionStorage.removeItem(ACTIVE_PAGE_KEY);
+            }
+
+            sessionStorage.setItem(SKIP_SCROLL_RESTORE_KEY, 'true');
+            sessionStorage.removeItem(SCROLL_POSITION_KEY);
+          }
+        } catch (error) {
+          // IGNORE STORAGE ISSUES: Browsers in privacy modes may block session storage; silently skip in that case.
+        }
+      };
+
+      // CTA LINK BINDINGS: Assign click handlers to each CTA button to trigger nav state storage.
+      const ctaLinks = floatingCta.querySelectorAll('a[href]');
+      ctaLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          storeNavTargetForLink(link);
+        });
+      });
+    });
+  </script>
+
+</body>
+
+
+</html>

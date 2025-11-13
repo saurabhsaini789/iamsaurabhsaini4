@@ -1,0 +1,856 @@
+<!-- DOCUMENT TYPE DECLARATION: Ensures browsers render the page in standards mode for consistent layout behavior. -->
+<!DOCTYPE html>
+<!-- ROOT HTML ELEMENT: Sets the default language to English; update lang attribute when localizing. -->
+<html lang="en">
+
+<!-- DOCUMENT HEAD: Contains metadata, SEO tags, structured data, and resources required before body content loads. -->
+<head>
+  <!-- GOOGLE ANALYTICS LOADER: Fetches gtag asynchronously; swap measurement ID to track a different property. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1E43J6JSQY"></script>
+  <!-- GOOGLE ANALYTICS INITIALIZER: Initializes the data layer and configures tracking; keep function name gtag for compatibility. -->
+  <script>
+    window.dataLayer = window.dataLayer || []; // GA BUFFER: Stores events triggered before analytics script finishes loading.
+    function gtag(){dataLayer.push(arguments);} // GA WRAPPER: Required signature for Google Analytics calls.
+    gtag('js', new Date()); // GA TIMESTAMP: Marks session start.
+    gtag('config', 'G-1E43J6JSQY'); // GA CONFIG: Associates page hits with the measurement ID.
+  </script>
+  <!-- MICROSOFT CLARITY SNIPPET: Enables heatmaps/session replay; update ID to connect with a different Clarity project. -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; // CLARITY QUEUE: Buffers events before script loads.
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i; // CLARITY LOADER: Fetches Clarity script asynchronously.
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y); // CLARITY INJECTOR: Adds script tag before first script element.
+    })(window, document, "clarity", "script", "u52l86f4q0");
+  </script>
+  <!-- CHARACTER ENCODING: Keeps text rendering correct with UTF-8; leave unchanged unless using another encoding. -->
+  <meta charset="UTF-8">
+  <!-- IE COMPATIBILITY MODE: Requests the latest rendering engine in older IE versions. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- RESPONSIVE VIEWPORT: Ensures layout adapts on mobile devices; adjust values only for specific zoom needs. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- PAGE TITLE: Appears in browser tabs and search results; update text to reflect blog branding. -->
+  <title>Saurabh Saini | Blog &amp; Learning Notes</title>
+  <!-- META DESCRIPTION: Search snippet summary; rewrite when adjusting blog positioning. -->
+  <meta name="description" content="Follow Saurabh Saini’s blog for actionable learning design tactics, creative experiments, and reflections on building inclusive education experiences.">
+  <!-- META KEYWORDS: Legacy SEO keywords; adjust when blog focus changes. -->
+  <meta name="keywords" content="Saurabh Saini blog, instructional design tips, learning experience design, education innovation">
+  <!-- META AUTHOR: Identifies page owner. -->
+  <meta name="author" content="Saurabh Saini">
+  <!-- CANONICAL URL: Prevents duplicate content issues; ensure matches published blog URL. -->
+  <link rel="canonical" href="https://iamsaurabhsaini.com/blog">
+  <!-- OPEN GRAPH META: Controls social sharing previews for platforms like Facebook and LinkedIn. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saurabh Saini | Blog &amp; Learning Notes">
+  <meta property="og:description" content="Insights and reflections on instructional design, learning experience, and creativity by Saurabh Saini.">
+  <meta property="og:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta property="og:url" content="https://iamsaurabhsaini.com/blog">
+  <meta property="og:site_name" content="iamsaurabhsaini">
+  <!-- TWITTER CARD META: Provides large image preview on X (Twitter); align content with OG tags. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saurabh Saini | Blog &amp; Learning Notes">
+  <meta name="twitter:description" content="Insights and reflections on instructional design, learning experience, and creativity by Saurabh Saini.">
+  <meta name="twitter:image" content="https://iamsaurabhsaini.com/images/preview.jpg">
+  <meta name="twitter:url" content="https://iamsaurabhsaini.com/blog">
+  <meta name="twitter:creator" content="@itssaurabhsaini">
+
+  <!-- FAVICON REFERENCES: Update image paths when adjusting brand iconography. -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/images/logo.png">
+
+  <!-- GLOBAL STYLESHEET: Imports the shared CSS bundle. -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- GOOGLE FONTS PRECONNECT: Speeds up loading of remote fonts by preconnecting to Google’s font servers. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- POPPINS FONT FAMILY: Primary typography; adjust weights when design system changes. -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- STRUCTURED DATA: Person + Website + Blog page metadata; keep synchronized with blog positioning. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://iamsaurabhsaini.com/#person",
+          "name": "Saurabh Saini",
+          "alternateName": [
+            "Saurabhsa Saini"
+          ],
+          "jobTitle": [
+            "Instructional Designer",
+            "Learning Experience Designer",
+            "Front-End Developer"
+          ],
+          "image": "https://iamsaurabhsaini.com/assets/images/portfoliopicv5.png",
+          "url": "https://iamsaurabhsaini.com/",
+          "description": "Instructional designer and multimedia storyteller crafting data-informed learning experiences and web products.",
+          "email": "mailto:saurabhsaini789@gmail.com",
+          "telephone": "+1-905-781-2687",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Winnipeg",
+            "addressRegion": "Manitoba",
+            "addressCountry": "CA"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/iamsaurabhsaini",
+            "https://www.youtube.com/@iamsaurabhsaini",
+            "https://www.instagram.com/createwithsaurabh",
+            "https://x.com/itssaurabhsaini",
+            "https://www.behance.net/iamsaurabhsaini"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://iamsaurabhsaini.com/#website",
+          "url": "https://iamsaurabhsaini.com/",
+          "name": "Saurabh Saini Portfolio",
+          "description": "Portfolio and learning hub highlighting the work of instructional designer Saurabh Saini.",
+          "publisher": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": [
+            "WebPage",
+            "Blog"
+          ],
+          "@id": "https://iamsaurabhsaini.com/blog#page",
+          "url": "https://iamsaurabhsaini.com/blog",
+          "name": "Blog & Learning Notes | Saurabh Saini",
+          "description": "Insights, tactics, and reflections on instructional design, learning experiences, and creativity from Saurabh Saini.",
+          "inLanguage": "en",
+          "isPartOf": {
+            "@id": "https://iamsaurabhsaini.com/#website"
+          },
+          "about": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://iamsaurabhsaini.com/images/preview.jpg"
+          },
+          "publisher": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "author": {
+            "@id": "https://iamsaurabhsaini.com/#person"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://iamsaurabhsaini.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://iamsaurabhsaini.com/blog"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  </script>
+
+  <!-- INLINE STYLES: Floating CTA styling consistent with other pages; modify carefully to avoid visual regressions. -->
+  <style>
+    .floating-cta {
+      position: fixed;
+      bottom: clamp(18px, 4vw, 48px);
+      left: 50%;
+      transform: translate(-50%, 12px);
+      display: flex;
+      gap: clamp(12px, 2.8vw, 20px);
+      z-index: 10010;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+
+    .floating-cta.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0);
+    }
+
+    .floating-cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 204, 102, 0.4);
+      background:
+        linear-gradient(135deg, rgba(255, 226, 170, 0.96), rgba(255, 204, 102, 1)),
+        rgba(15, 17, 21, 0.92);
+      color: #1a1d23;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background 180ms ease;
+    }
+
+    .floating-cta-button:hover,
+    .floating-cta-button:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(255, 226, 170, 0.9);
+      background:
+        linear-gradient(135deg, rgba(255, 233, 188, 0.98), rgba(255, 214, 128, 1)),
+        rgba(15, 17, 21, 0.92);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
+      outline: none;
+    }
+
+    .floating-cta-button:focus-visible {
+      box-shadow:
+        0 0 0 3px rgba(255, 204, 102, 0.45),
+        0 24px 48px rgba(0, 0, 0, 0.34);
+    }
+
+    body.light-mode .floating-cta-button {
+      background:
+        linear-gradient(135deg, rgba(255, 244, 218, 0.98), rgba(255, 230, 176, 0.96));
+      border: 1px solid rgba(205, 150, 45, 0.45);
+      color: #3b2a00;
+      box-shadow: 0 18px 34px rgba(205, 160, 60, 0.18);
+    }
+
+    body.light-mode .floating-cta-button:hover,
+    body.light-mode .floating-cta-button:focus-visible {
+      background:
+        linear-gradient(135deg, rgba(255, 236, 174, 0.98), rgba(255, 215, 120, 0.96));
+      border-color: rgba(205, 150, 45, 0.65);
+      color: #2d1e00;
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+      .floating-cta {
+        gap: clamp(10px, 2vw, 18px);
+      }
+
+      .floating-cta-button {
+        padding: 0.65rem 1.9rem;
+        border-radius: 999px;
+        font-size: 0.82rem;
+        letter-spacing: 0.04em;
+        min-width: 240px;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .floating-cta {
+        flex-direction: column;
+        align-items: center;
+        width: min(90vw, 380px);
+        padding-bottom: 48px;
+      }
+
+      .floating-cta-button {
+        width: 100%;
+        text-align: center;
+        font-size: 0.82rem;
+        padding: 0.7rem 1.2rem;
+      }
+
+      .floating-cta-button:nth-child(-n + 2) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+
+
+<!-- DOCUMENT BODY: Wraps visible blog content and JavaScript-driven interactions. -->
+<body class="tablet-stacked light-mode">
+
+  <!-- THEME TOGGLE BUTTON: Allows visitors to switch between light/dark themes; update aria-label to reflect the next mode. -->
+  <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+    <span class="theme-toggle__pill" aria-hidden="true">
+      <span class="theme-toggle__option theme-toggle__option--sun">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--sun">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23f5a623' stroke='%23f5a623'/%3E%3Cline x1='12' y1='2' x2='12' y2='5'/%3E%3Cline x1='12' y1='19' x2='12' y2='22'/%3E%3Cline x1='4.22' y1='4.22' x2='6.34' y2='6.34'/%3E%3Cline x1='17.66' y1='17.66' x2='19.78' y2='19.78'/%3E%3Cline x1='2' y1='12' x2='5' y2='12'/%3E%3Cline x1='19' y1='12' x2='22' y2='12'/%3E%3Cline x1='4.22' y1='19.78' x2='6.34' y2='17.66'/%3E%3Cline x1='17.66' y1='6.34' x2='19.78' y2='4.22'/%3E%3C/svg%3E"
+            alt=""
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__option theme-toggle__option--moon">
+        <span class="theme-toggle__icon-wrap theme-toggle__icon-wrap--moon">
+          <img
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23f5a623' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath fill='%23f5a623' stroke='%23f5a623' d='M21 12.79A9 9 0 0 1 11.21 3 7 7 0 0 0 12 21a7 7 0 0 0 9-8.21Z'/%3E%3C/svg%3E"
+            alt=""
+            width="24"
+            height="24"
+            decoding="async"
+            loading="lazy"
+            aria-hidden="true"
+            data-lightbox-disabled="true"
+          >
+        </span>
+      </span>
+      <span class="theme-toggle__indicator"></span>
+    </span>
+  </button>
+
+  <!-- PAGE MAP COMMENT: Quick reference for future editors; adjust entries when sections change. -->
+  <!--
+    PAGE MAP — blog.html
+    Manage blog listings and categories here.
+
+    SIDEBAR (shared)     → Profile details & contact links
+    .filter-list         → Category buttons shown above posts
+    .select-list         → Dropdown categories for small screens
+    .blog-posts-list     → Card list of blog previews
+
+    GLOBAL CONTROLS
+      [data-theme-toggle] → Theme toggle (persists preference via script.js)
+
+    FLOATING UI
+      .floating-cta       → Quick actions to resume, portfolio, contact pages
+  -->
+
+  <!-- PRIMARY LAYOUT: Groups sidebar and blog article content inside semantic <main>. -->
+  <main>
+    <!-- SIDEBAR: Shared profile/contact module reused across site pages. -->
+    <aside class="sidebar" data-sidebar>
+      <!-- SIDEBAR PROFILE AREA: Displays avatar, name, role, and contact toggle button. -->
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/portfoliopicv5.png" alt="Portrait of Saurabh Saini" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Saurabhsa Saini">Saurabh Saini</h1>
+          <p class="title">Instructional Designer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <!-- SIDEBAR CONTACT PANEL: Hidden drawer containing contact links; script.js toggles visibility. -->
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <!-- CONTACT LIST: Each item shows icon, label, and contact detail; duplicate pattern to add more channels. -->
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-GMAIL.png" alt="Gmail envelope icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:saurabhsaini789@gmail.com" class="contact-link">saurabhsaini789@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALL.png" alt="Phone handset icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+19057812687" class="contact-link">+1 (905) 781-2687</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LINKEDIN.png" alt="LinkedIn logo icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/iamsaurabhsaini/" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-YT.png" alt="YouTube play button icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">YouTube</p>
+              <a href="https://www.youtube.com/@iamsaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@iamsaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-INSTA.png" alt="Instagram camera icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Instagram</p>
+              <a href="https://www.instagram.com/createwithsaurabh/" class="contact-link" target="_blank" rel="noopener noreferrer">@createwithsaurabh</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-X.png" alt="X social network icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Twitter</p>
+              <a href="https://x.com/itssaurabhsaini" class="contact-link" target="_blank" rel="noopener noreferrer">@itssaurabhsaini</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-CALENDAR.png" alt="Calendar icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="1996-07-23">July 23, 1996</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/images/ICON-LOCATION.png" alt="Location pin icon" class="contact-icon">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Winnipeg, Manitoba, CA</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT COLUMN: Hosts navigation and blog article listings. -->
+    <div class="main-content">
+      <!-- NAVBAR: Shared page navigation; data attributes help script.js track the active page across visits. -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="about" href="index.html">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="resume" href="resume.html">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="portfolio" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="learning hub" href="learning-hub.html">Learning Hub</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link active" data-nav-link data-nav-target="blog" href="blog.html">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" data-nav-link data-nav-target="contact" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- BLOG ARTICLE: Wraps filters and blog post cards inside an <article> for semantic focus. -->
+      <article class="blog active" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <!-- BLOG POSTS SECTION: Contains category filters and the list of blog preview cards. -->
+        <section class="blog-posts">
+          <!-- DESKTOP FILTERS: Category buttons allowing users to filter posts; text must match data-category values. -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Instructional design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Process analysis</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Graphic design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Education</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Dashboards</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Project management</button>
+            </li>
+          </ul>
+
+          <!-- MOBILE FILTER SELECTOR: Dropdown version of category filters for smaller screens. -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button class="active" data-filter-btn data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Instructional design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Process analysis</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Graphic design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Education</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Web design</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Dashboards</button>
+              </li>
+              <li class="select-item">
+                <button data-filter-btn data-select-item>Project management</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BLOG CARD LIST: Each <li> displays a blog preview; data attributes map to filter functionality in script.js. -->
+          <ul class="blog-posts-list">
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="process analysis">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-6.jpg" alt="Process analysis blog entry thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Process Analysis</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-06-23" data-blog-date>June 23, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>testing blog entry</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="web design">
+              <a class="resource-card" href="articlepage.html" data-blog-link data-blog-target="articlepage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Web Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-02-23" data-blog-date>Feb 23, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>UI interactions of the week</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="graphic design">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80 thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Graphic Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-02-23" data-blog-date>Feb 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>Design digest #80</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="instructional design">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Instructional Design</p>
+                    <span class="dot"></span>
+                    <time datetime="2023-02-23" data-blog-date>Feb 23, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>Best fonts every designer</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="education">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022 thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Education</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23" data-blog-date>Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>Design conferences in 2022</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="dashboards">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Dashboards</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23" data-blog-date>Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>The forgotten art of spacing</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item active" data-blog-item data-filter-item data-category="project management">
+              <a class="resource-card" href="blogpage.html" data-blog-link data-blog-target="blogpage.html">
+                <figure class="blog-banner-box">
+                  <div class="blog-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79 thumbnail" loading="lazy" data-blog-img>
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category" data-blog-category>Project Management</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23" data-blog-date>Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-blog-title>Design digest #79</h3>
+
+                  <p class="blog-text" data-blog-text>
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- FLOATING CTA: Persistent quick actions for exploring resume, portfolio, or contact pages. -->
+  <div class="floating-cta" data-floating-cta hidden>
+    <a class="floating-cta-button" href="resume.html" data-nav-target="resume">Learn More About Me</a>
+    <a class="floating-cta-button" href="portfolio.html" data-nav-target="portfolio">Explore Projects</a>
+    <a class="floating-cta-button" href="contact.html" data-nav-target="contact">Let's Work Together</a>
+  </div>
+
+  <!-- CORE SCRIPT: Provides global interactivity (filter logic, theme persistence, etc.). -->
+  <script src="./assets/js/script.js"></script>
+  <!-- IONICONS: Loads icon set used in buttons, toggle controls, and cards. -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- FLOATING CTA SCRIPT: Handles delayed activation and scroll-based visibility for quick action buttons. -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const floatingCta = document.querySelector('[data-floating-cta]');
+
+      if (!floatingCta) {
+        return;
+      }
+
+      let hasActivatedFloatingCta = false;
+      let isFloatingCtaVisible = false;
+      let lastScrollY = window.scrollY;
+      let ctaTimeoutId = null;
+
+      const showFloatingCta = () => {
+        if (isFloatingCtaVisible) {
+          return;
+        }
+
+        floatingCta.classList.add('is-visible');
+        floatingCta.removeAttribute('hidden');
+        isFloatingCtaVisible = true;
+      };
+
+      const hideFloatingCta = () => {
+        if (!isFloatingCtaVisible) {
+          return;
+        }
+
+        floatingCta.classList.remove('is-visible');
+        floatingCta.setAttribute('hidden', '');
+        isFloatingCtaVisible = false;
+      };
+
+      const activateFloatingCta = () => {
+        if (hasActivatedFloatingCta) {
+          showFloatingCta();
+          return;
+        }
+
+        hasActivatedFloatingCta = true;
+        showFloatingCta();
+
+        if (ctaTimeoutId) {
+          window.clearTimeout(ctaTimeoutId);
+          ctaTimeoutId = null;
+        }
+      };
+
+      ctaTimeoutId = window.setTimeout(() => {
+        activateFloatingCta();
+      }, 7000);
+
+      const handleFloatingCtaScroll = () => {
+        const currentScrollY = window.scrollY;
+
+        if (!hasActivatedFloatingCta && currentScrollY > 0) {
+          activateFloatingCta();
+        }
+
+        if (!hasActivatedFloatingCta) {
+          lastScrollY = currentScrollY;
+          return;
+        }
+
+        if (currentScrollY < lastScrollY && currentScrollY <= 120) {
+          hideFloatingCta();
+        } else if (currentScrollY > 160) {
+          showFloatingCta();
+        }
+
+        lastScrollY = currentScrollY;
+      };
+
+      window.addEventListener('scroll', handleFloatingCtaScroll, { passive: true });
+
+      const ACTIVE_PAGE_KEY = 'active-page';
+      const SCROLL_POSITION_KEY = 'page-scroll-position';
+      const SKIP_SCROLL_RESTORE_KEY = 'skip-scroll-restore';
+
+      const storeNavTargetForLink = (link) => {
+        if (!(link instanceof HTMLAnchorElement)) {
+          return;
+        }
+
+        try {
+          const navTarget = (link.dataset.navTarget || '').trim().toLowerCase();
+
+          if (typeof sessionStorage !== 'undefined') {
+            if (navTarget) {
+              sessionStorage.setItem(ACTIVE_PAGE_KEY, navTarget);
+            } else {
+              sessionStorage.removeItem(ACTIVE_PAGE_KEY);
+            }
+
+            sessionStorage.setItem(SKIP_SCROLL_RESTORE_KEY, 'true');
+            sessionStorage.removeItem(SCROLL_POSITION_KEY);
+          }
+        } catch (error) {
+          // STORAGE FALLBACK: Ignore quota or privacy mode errors to keep UX smooth.
+        }
+      };
+
+      const ctaLinks = floatingCta.querySelectorAll('a[href]');
+      ctaLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+          storeNavTargetForLink(link);
+        });
+      });
+    });
+  </script>
+</body>
+
+
+</html>
